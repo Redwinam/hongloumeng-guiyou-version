@@ -4,12 +4,15 @@
         <dc:title>癸酉本《红楼梦》</dc:title>
         <dc:creator opf:role="aut">吴氏石头记</dc:creator>
         <dc:language>zh-CN</dc:language>
-        <dc:identifier id="BookId" opf:scheme="UUID">9ba536fa-9f23-48da-8f5f-21e18fd0209e</dc:identifier>
+        <dc:identifier id="BookId" opf:scheme="UUID">2a6ea21d-7a59-48dd-8139-a9e5aa6d9b41</dc:identifier>
         <dc:date>2025-12-02</dc:date>
+        <meta name="cover" content="cover-image"/>
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
         <item id="style" href="style.css" media-type="text/css"/>
+        <item id="cover" href="cover.html" media-type="application/xhtml+xml"/>
+        <item id="cover-image" href="images/cover.png" media-type="image/png"/>
         <item id="toc" href="toc.html" media-type="application/xhtml+xml"/>
         <item id="intro" href="intro.html" media-type="application/xhtml+xml"/>
 <item id="chap_1" href="chapter_1.html" media-type="application/xhtml+xml"/>
@@ -122,6 +125,7 @@
 <item id="chap_108" href="chapter_108.html" media-type="application/xhtml+xml"/>
     </manifest>
     <spine toc="ncx">
+        <itemref idref="cover" linear="yes"/>
         <itemref idref="toc"/>
         <itemref idref="intro"/>
 <itemref idref="chap_1"/>

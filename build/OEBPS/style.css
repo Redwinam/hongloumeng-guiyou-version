@@ -12,18 +12,45 @@ body {
     margin: 0;
     padding: 0;
     text-align: justify;
-    background-color: #fdfbf7; /* 柔和的米色背景，模拟纸张 */
-    color: #2c2c2c; /* 深灰色文字，比纯黑更柔和 */
+    background-color: #fdfbf7;
+    /* 柔和的米色背景，模拟纸张 */
+    color: #2c2c2c;
+    /* 深灰色文字，比纯黑更柔和 */
 }
 
 /* 章节标题 */
-h1, h2, h3 {
-    font-family: "Kaiti SC", "KaiTi", "STKaiti", serif; /* 楷体用于标题 */
+h1,
+h2,
+h3 {
+    font-family: "Kaiti SC", "KaiTi", "STKaiti", serif;
+    /* 楷体用于标题 */
     font-weight: bold;
-    color: #8b0000; /* 深红色，点缀 */
+    color: #8b0000;
+    /* 深红色，点缀 */
     text-align: center;
     margin-top: 2em;
     margin-bottom: 1.5em;
+}
+
+/* 诗词行样式 */
+.poem-line {
+    font-family: "KaiTi", "楷体", "STKaiti", serif;
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin: 0.2em 0;
+    /* Reduced spacing between lines */
+    text-align: center;
+    color: #555;
+}
+
+/* Add spacing before the first poem line if it follows a normal paragraph */
+p:not(.poem-line)+.poem-line {
+    margin-top: 1.5em;
+}
+
+/* Add spacing after the last poem line if it precedes a normal paragraph */
+.poem-line+p:not(.poem-line) {
+    margin-top: 1.5em;
 }
 
 h1 {
@@ -59,7 +86,8 @@ p {
 
 /* 批注样式 (【...】) */
 .comment {
-    color: #a52a2a; /* 棕红色 */
+    color: #a52a2a;
+    /* 棕红色 */
     font-size: 0.9em;
     font-family: "Kaiti SC", "KaiTi", serif;
     margin: 0 0.2em;

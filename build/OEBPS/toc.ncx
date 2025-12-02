@@ -2,450 +2,454 @@
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
     <head>
-        <meta name="dtb:uid" content="9ba536fa-9f23-48da-8f5f-21e18fd0209e"/>
+        <meta name="dtb:uid" content="2a6ea21d-7a59-48dd-8139-a9e5aa6d9b41"/>
         <meta name="dtb:depth" content="1"/>
         <meta name="dtb:totalPageCount" content="0"/>
         <meta name="dtb:maxPageNumber" content="0"/>
     </head>
     <docTitle><text>癸酉本《红楼梦》</text></docTitle>
     <navMap>
-        <navPoint id="navPoint-0" playOrder="0">
+        <navPoint id="navPoint-cover" playOrder="0">
+            <navLabel><text>封面</text></navLabel>
+            <content src="cover.html"/>
+        </navPoint>
+        <navPoint id="navPoint-toc" playOrder="1">
             <navLabel><text>目录</text></navLabel>
             <content src="toc.html"/>
         </navPoint>
-        <navPoint id="navPoint-1" playOrder="1">
+        <navPoint id="navPoint-2" playOrder="2">
                 <navLabel><text>扉页</text></navLabel>
                 <content src="intro.html"/>
             </navPoint>
-<navPoint id="navPoint-2" playOrder="2">
+<navPoint id="navPoint-3" playOrder="3">
                 <navLabel><text>第一回 甄士隐梦幻识通灵　贾雨村风尘怀闺秀</text></navLabel>
                 <content src="chapter_1.html"/>
             </navPoint>
-<navPoint id="navPoint-3" playOrder="3">
+<navPoint id="navPoint-4" playOrder="4">
                 <navLabel><text>第二回 贾夫人仙逝扬州城　冷子兴演说荣国府</text></navLabel>
                 <content src="chapter_2.html"/>
             </navPoint>
-<navPoint id="navPoint-4" playOrder="4">
+<navPoint id="navPoint-5" playOrder="5">
                 <navLabel><text>第三回 金陵城起复贾雨村　荣国府收养林黛玉</text></navLabel>
                 <content src="chapter_3.html"/>
             </navPoint>
-<navPoint id="navPoint-5" playOrder="5">
+<navPoint id="navPoint-6" playOrder="6">
                 <navLabel><text>第四回 薄命女偏逢薄命郎　葫芦僧乱判葫芦案</text></navLabel>
                 <content src="chapter_4.html"/>
             </navPoint>
-<navPoint id="navPoint-6" playOrder="6">
+<navPoint id="navPoint-7" playOrder="7">
                 <navLabel><text>第五回 游幻境指迷十二钗  饮仙醪曲演红楼梦</text></navLabel>
                 <content src="chapter_5.html"/>
             </navPoint>
-<navPoint id="navPoint-7" playOrder="7">
+<navPoint id="navPoint-8" playOrder="8">
                 <navLabel><text>第六回 贾宝玉初试云雨情　刘姥姥一进荣国府</text></navLabel>
                 <content src="chapter_6.html"/>
             </navPoint>
-<navPoint id="navPoint-8" playOrder="8">
+<navPoint id="navPoint-9" playOrder="9">
                 <navLabel><text>第七回 送宫花周瑞叹英莲　谈肄业秦钟结宝玉</text></navLabel>
                 <content src="chapter_7.html"/>
             </navPoint>
-<navPoint id="navPoint-9" playOrder="9">
+<navPoint id="navPoint-10" playOrder="10">
                 <navLabel><text>第八回 薛宝钗小恙梨香院　贾宝玉大醉绛芸轩</text></navLabel>
                 <content src="chapter_8.html"/>
             </navPoint>
-<navPoint id="navPoint-10" playOrder="10">
+<navPoint id="navPoint-11" playOrder="11">
                 <navLabel><text>第九回 恋风流情友入家塾　起嫌疑顽童闹学堂</text></navLabel>
                 <content src="chapter_9.html"/>
             </navPoint>
-<navPoint id="navPoint-11" playOrder="11">
+<navPoint id="navPoint-12" playOrder="12">
                 <navLabel><text>第十回 金寡妇嗔姤凝曦轩 秦可卿淫上天香楼</text></navLabel>
                 <content src="chapter_10.html"/>
             </navPoint>
-<navPoint id="navPoint-12" playOrder="12">
+<navPoint id="navPoint-13" playOrder="13">
                 <navLabel><text>第十一回 怀愧女迎阻宁国府 不伦子欲接天台路</text></navLabel>
                 <content src="chapter_11.html"/>
             </navPoint>
-<navPoint id="navPoint-13" playOrder="13">
+<navPoint id="navPoint-14" playOrder="14">
                 <navLabel><text>第十二回 王熙凤毒设相思局【贾瑞乃祥瑞之意，凤姐掌家却将祥瑞遣尽实不吉也】</text></navLabel>
                 <content src="chapter_12.html"/>
             </navPoint>
-<navPoint id="navPoint-14" playOrder="14">
+<navPoint id="navPoint-15" playOrder="15">
                 <navLabel><text>第十三回 秦可卿死封龙禁尉【不通之至，与贾蓉混淆，不如初拟死封五花诰】</text></navLabel>
                 <content src="chapter_13.html"/>
             </navPoint>
-<navPoint id="navPoint-15" playOrder="15">
+<navPoint id="navPoint-16" playOrder="16">
                 <navLabel><text>第十四回 林如海捐馆扬州城　贾宝玉路谒北静王</text></navLabel>
                 <content src="chapter_14.html"/>
             </navPoint>
-<navPoint id="navPoint-16" playOrder="16">
+<navPoint id="navPoint-17" playOrder="17">
                 <navLabel><text>第十五回 王凤姐弄权铁槛寺　秦鲸卿得趣馒头庵</text></navLabel>
                 <content src="chapter_15.html"/>
             </navPoint>
-<navPoint id="navPoint-17" playOrder="17">
+<navPoint id="navPoint-18" playOrder="18">
                 <navLabel><text>第十六回 贾元春才选凤藻宫</text></navLabel>
                 <content src="chapter_16.html"/>
             </navPoint>
-<navPoint id="navPoint-18" playOrder="18">
+<navPoint id="navPoint-19" playOrder="19">
                 <navLabel><text>第十七回 大观园试才题对额　怡红院迷路探曲折</text></navLabel>
                 <content src="chapter_17.html"/>
             </navPoint>
-<navPoint id="navPoint-19" playOrder="19">
+<navPoint id="navPoint-20" playOrder="20">
                 <navLabel><text>第十八回 林黛玉误剪香袋囊　贾元春归省庆元宵</text></navLabel>
                 <content src="chapter_18.html"/>
             </navPoint>
-<navPoint id="navPoint-20" playOrder="20">
+<navPoint id="navPoint-21" playOrder="21">
                 <navLabel><text>第十九回 情切切良宵花解语　意绵绵静日玉生香</text></navLabel>
                 <content src="chapter_19.html"/>
             </navPoint>
-<navPoint id="navPoint-21" playOrder="21">
+<navPoint id="navPoint-22" playOrder="22">
                 <navLabel><text>第二十回 王熙凤正言弹妒意　林黛玉俏语谑娇音</text></navLabel>
                 <content src="chapter_20.html"/>
             </navPoint>
-<navPoint id="navPoint-22" playOrder="22">
+<navPoint id="navPoint-23" playOrder="23">
                 <navLabel><text>第二十一回 贤袭人娇嗔箴宝玉　俏平儿软语救贾琏</text></navLabel>
                 <content src="chapter_21.html"/>
             </navPoint>
-<navPoint id="navPoint-23" playOrder="23">
+<navPoint id="navPoint-24" playOrder="24">
                 <navLabel><text>第二十二回 听曲文宝玉悟禅机　制灯迷贾政悲谶语</text></navLabel>
                 <content src="chapter_22.html"/>
             </navPoint>
-<navPoint id="navPoint-24" playOrder="24">
+<navPoint id="navPoint-25" playOrder="25">
                 <navLabel><text>第二十三回 西厢记妙词通戏语　牡丹亭艳曲警芳心</text></navLabel>
                 <content src="chapter_23.html"/>
             </navPoint>
-<navPoint id="navPoint-25" playOrder="25">
+<navPoint id="navPoint-26" playOrder="26">
                 <navLabel><text>第二十四回 醉金刚轻财尚义侠【醉酒人最大方，只是醒了未必肯借了】</text></navLabel>
                 <content src="chapter_24.html"/>
             </navPoint>
-<navPoint id="navPoint-26" playOrder="26">
+<navPoint id="navPoint-27" playOrder="27">
                 <navLabel><text>第二十五回 魇魔法叔嫂逢五鬼　通灵玉蒙蔽遇双真</text></navLabel>
                 <content src="chapter_25.html"/>
             </navPoint>
-<navPoint id="navPoint-27" playOrder="27">
+<navPoint id="navPoint-28" playOrder="28">
                 <navLabel><text>第二十六回 蜂腰桥设言传密意　潇湘馆春困发幽情</text></navLabel>
                 <content src="chapter_26.html"/>
             </navPoint>
-<navPoint id="navPoint-28" playOrder="28">
+<navPoint id="navPoint-29" playOrder="29">
                 <navLabel><text>第二十七回 滴翠亭杨妃戏彩蝶　埋香冢飞燕泣残红</text></navLabel>
                 <content src="chapter_27.html"/>
             </navPoint>
-<navPoint id="navPoint-29" playOrder="29">
+<navPoint id="navPoint-30" playOrder="30">
                 <navLabel><text>第二十八回 蒋玉菡情赠茜香罗　薛宝钗羞笼红麝串</text></navLabel>
                 <content src="chapter_28.html"/>
             </navPoint>
-<navPoint id="navPoint-30" playOrder="30">
+<navPoint id="navPoint-31" playOrder="31">
                 <navLabel><text>第二十九回 享福人福深还祷福　痴情女情重愈斟情</text></navLabel>
                 <content src="chapter_29.html"/>
             </navPoint>
-<navPoint id="navPoint-31" playOrder="31">
+<navPoint id="navPoint-32" playOrder="32">
                 <navLabel><text>第三十回 宝钗借扇机带双敲</text></navLabel>
                 <content src="chapter_30.html"/>
             </navPoint>
-<navPoint id="navPoint-32" playOrder="32">
+<navPoint id="navPoint-33" playOrder="33">
                 <navLabel><text>第三十一回 撕扇子作千金一笑　因麒麟伏白首双星</text></navLabel>
                 <content src="chapter_31.html"/>
             </navPoint>
-<navPoint id="navPoint-33" playOrder="33">
+<navPoint id="navPoint-34" playOrder="34">
                 <navLabel><text>第三十二回 诉肺腑心迷活宝玉</text></navLabel>
                 <content src="chapter_32.html"/>
             </navPoint>
-<navPoint id="navPoint-34" playOrder="34">
+<navPoint id="navPoint-35" playOrder="35">
                 <navLabel><text>第三十三回 手足耽耽小动唇舌　不肖种种大承笞挞</text></navLabel>
                 <content src="chapter_33.html"/>
             </navPoint>
-<navPoint id="navPoint-35" playOrder="35">
+<navPoint id="navPoint-36" playOrder="36">
                 <navLabel><text>第三十四回 情中情因情感妹妹　错里错以错劝哥哥</text></navLabel>
                 <content src="chapter_34.html"/>
             </navPoint>
-<navPoint id="navPoint-36" playOrder="36">
+<navPoint id="navPoint-37" playOrder="37">
                 <navLabel><text>第三十五回 白玉钏亲尝莲叶羹　黄金莺巧结梅花络</text></navLabel>
                 <content src="chapter_35.html"/>
             </navPoint>
-<navPoint id="navPoint-37" playOrder="37">
+<navPoint id="navPoint-38" playOrder="38">
                 <navLabel><text>第三十六回 绣鸳鸯梦兆绛芸轩　识分定情悟梨香院</text></navLabel>
                 <content src="chapter_36.html"/>
             </navPoint>
-<navPoint id="navPoint-38" playOrder="38">
+<navPoint id="navPoint-39" playOrder="39">
                 <navLabel><text>第三十七回 秋爽斋偶结海棠社　蘅芜苑夜拟菊花题</text></navLabel>
                 <content src="chapter_37.html"/>
             </navPoint>
-<navPoint id="navPoint-39" playOrder="39">
+<navPoint id="navPoint-40" playOrder="40">
                 <navLabel><text>第三十八回 林潇湘魁夺菊花诗【菊花高洁，堪配颦卿】</text></navLabel>
                 <content src="chapter_38.html"/>
             </navPoint>
-<navPoint id="navPoint-40" playOrder="40">
+<navPoint id="navPoint-41" playOrder="41">
                 <navLabel><text>第三十九回 村姥姥是信口开合　情哥哥偏寻根究底</text></navLabel>
                 <content src="chapter_39.html"/>
             </navPoint>
-<navPoint id="navPoint-41" playOrder="41">
+<navPoint id="navPoint-42" playOrder="42">
                 <navLabel><text>第四十回 史太君两宴大观园　金鸳鸯三宣牙牌令</text></navLabel>
                 <content src="chapter_40.html"/>
             </navPoint>
-<navPoint id="navPoint-42" playOrder="42">
+<navPoint id="navPoint-43" playOrder="43">
                 <navLabel><text>第四十一回 栊翠庵茶品梅花雪　怡红院劫遇母蝗虫</text></navLabel>
                 <content src="chapter_41.html"/>
             </navPoint>
-<navPoint id="navPoint-43" playOrder="43">
+<navPoint id="navPoint-44" playOrder="44">
                 <navLabel><text>第四十二回 蘅芜君蘭言解疑癖　潇湘子雅谑补余香</text></navLabel>
                 <content src="chapter_42.html"/>
             </navPoint>
-<navPoint id="navPoint-44" playOrder="44">
+<navPoint id="navPoint-45" playOrder="45">
                 <navLabel><text>第四十三回 闲取乐偶攒金庆寿　不了情暂撮土为香</text></navLabel>
                 <content src="chapter_43.html"/>
             </navPoint>
-<navPoint id="navPoint-45" playOrder="45">
+<navPoint id="navPoint-46" playOrder="46">
                 <navLabel><text>第四十四回 变生不测凤姐泼醋　喜出望外平儿理妆</text></navLabel>
                 <content src="chapter_44.html"/>
             </navPoint>
-<navPoint id="navPoint-46" playOrder="46">
+<navPoint id="navPoint-47" playOrder="47">
                 <navLabel><text>第四十五回 金蘭契互剖金蘭语　风雨夕闷制风雨词</text></navLabel>
                 <content src="chapter_45.html"/>
             </navPoint>
-<navPoint id="navPoint-47" playOrder="47">
+<navPoint id="navPoint-48" playOrder="48">
                 <navLabel><text>第四十六回 尴尬人难免尴尬事　鸳鸯女誓绝鸳鸯偶</text></navLabel>
                 <content src="chapter_46.html"/>
             </navPoint>
-<navPoint id="navPoint-48" playOrder="48">
+<navPoint id="navPoint-49" playOrder="49">
                 <navLabel><text>第四十七回 呆霸王调情遭苦打　冷郎君惧祸走他乡</text></navLabel>
                 <content src="chapter_47.html"/>
             </navPoint>
-<navPoint id="navPoint-49" playOrder="49">
+<navPoint id="navPoint-50" playOrder="50">
                 <navLabel><text>第四十八回 滥情人情误思游艺　慕雅女雅集苦吟诗</text></navLabel>
                 <content src="chapter_48.html"/>
             </navPoint>
-<navPoint id="navPoint-50" playOrder="50">
+<navPoint id="navPoint-51" playOrder="51">
                 <navLabel><text>第四十九回 琉璃世界白雪红梅　脂粉香娃割腥啖膻</text></navLabel>
                 <content src="chapter_49.html"/>
             </navPoint>
-<navPoint id="navPoint-51" playOrder="51">
+<navPoint id="navPoint-52" playOrder="52">
                 <navLabel><text>第五十回 芦雪广争联即景诗　暖香坞雅制春灯谜</text></navLabel>
                 <content src="chapter_50.html"/>
             </navPoint>
-<navPoint id="navPoint-52" playOrder="52">
+<navPoint id="navPoint-53" playOrder="53">
                 <navLabel><text>第五十一回 薛小妹新编怀古诗　胡庸医乱用虎狼药</text></navLabel>
                 <content src="chapter_51.html"/>
             </navPoint>
-<navPoint id="navPoint-53" playOrder="53">
+<navPoint id="navPoint-54" playOrder="54">
                 <navLabel><text>第五十二回 俏平儿情掩虾须镯　勇晴雯病补雀金裘</text></navLabel>
                 <content src="chapter_52.html"/>
             </navPoint>
-<navPoint id="navPoint-54" playOrder="54">
+<navPoint id="navPoint-55" playOrder="55">
                 <navLabel><text>第五十三回 宁国府除夕祭宗祠　荣国府元宵开夜宴</text></navLabel>
                 <content src="chapter_53.html"/>
             </navPoint>
-<navPoint id="navPoint-55" playOrder="55">
+<navPoint id="navPoint-56" playOrder="56">
                 <navLabel><text>第五十四回 史太君破陈腐旧套　王熙凤效戏彩斑衣</text></navLabel>
                 <content src="chapter_54.html"/>
             </navPoint>
-<navPoint id="navPoint-56" playOrder="56">
+<navPoint id="navPoint-57" playOrder="57">
                 <navLabel><text>第五十五回 辱亲女愚妾争闲气　欺幼主刁奴蓄险心</text></navLabel>
                 <content src="chapter_55.html"/>
             </navPoint>
-<navPoint id="navPoint-57" playOrder="57">
+<navPoint id="navPoint-58" playOrder="58">
                 <navLabel><text>第五十六回 敏探春兴利除宿弊　时宝钗小惠全大体</text></navLabel>
                 <content src="chapter_56.html"/>
             </navPoint>
-<navPoint id="navPoint-58" playOrder="58">
+<navPoint id="navPoint-59" playOrder="59">
                 <navLabel><text>第五十七回 慧紫鹃情辞试忙玉　慈姨妈爱语慰痴颦</text></navLabel>
                 <content src="chapter_57.html"/>
             </navPoint>
-<navPoint id="navPoint-59" playOrder="59">
+<navPoint id="navPoint-60" playOrder="60">
                 <navLabel><text>第五十八回 杏子阴假凤泣虚凰　茜纱窗真情揆痴理</text></navLabel>
                 <content src="chapter_58.html"/>
             </navPoint>
-<navPoint id="navPoint-60" playOrder="60">
+<navPoint id="navPoint-61" playOrder="61">
                 <navLabel><text>第五十九回 柳叶渚边嗔莺咤燕</text></navLabel>
                 <content src="chapter_59.html"/>
             </navPoint>
-<navPoint id="navPoint-61" playOrder="61">
+<navPoint id="navPoint-62" playOrder="62">
                 <navLabel><text>第六十回 茉莉粉替去蔷薇硝　玫瑰露引来茯苓霜</text></navLabel>
                 <content src="chapter_60.html"/>
             </navPoint>
-<navPoint id="navPoint-62" playOrder="62">
+<navPoint id="navPoint-63" playOrder="63">
                 <navLabel><text>第六十一回 投鼠忌器宝玉瞒赃</text></navLabel>
                 <content src="chapter_61.html"/>
             </navPoint>
-<navPoint id="navPoint-63" playOrder="63">
+<navPoint id="navPoint-64" playOrder="64">
                 <navLabel><text>第六十二回 憨湘云醉眠芍药裀　呆香菱情解石榴裙</text></navLabel>
                 <content src="chapter_62.html"/>
             </navPoint>
-<navPoint id="navPoint-64" playOrder="64">
+<navPoint id="navPoint-65" playOrder="65">
                 <navLabel><text>第六十三回 寿怡红群芳开夜宴　死金丹独艳理亲丧</text></navLabel>
                 <content src="chapter_63.html"/>
             </navPoint>
-<navPoint id="navPoint-65" playOrder="65">
+<navPoint id="navPoint-66" playOrder="66">
                 <navLabel><text>第六十四回 幽淑女悲题五美吟　浪荡子情遗九龙佩</text></navLabel>
                 <content src="chapter_64.html"/>
             </navPoint>
-<navPoint id="navPoint-66" playOrder="66">
+<navPoint id="navPoint-67" playOrder="67">
                 <navLabel><text>第六十五回 贾二舍偷娶尤二姨　尤三姐思嫁柳二郎</text></navLabel>
                 <content src="chapter_65.html"/>
             </navPoint>
-<navPoint id="navPoint-67" playOrder="67">
+<navPoint id="navPoint-68" playOrder="68">
                 <navLabel><text>第六十六回 情小妹耻情归地府　冷二郎一冷入空门</text></navLabel>
                 <content src="chapter_66.html"/>
             </navPoint>
-<navPoint id="navPoint-68" playOrder="68">
+<navPoint id="navPoint-69" playOrder="69">
                 <navLabel><text>第六十七回 探奇宗宝玉惋故友 闻秘事凤姐讯家童</text></navLabel>
                 <content src="chapter_67.html"/>
             </navPoint>
-<navPoint id="navPoint-69" playOrder="69">
+<navPoint id="navPoint-70" playOrder="70">
                 <navLabel><text>第六十八回 苦尤娘赚入大观园　酸凤姐大闹宁国府</text></navLabel>
                 <content src="chapter_68.html"/>
             </navPoint>
-<navPoint id="navPoint-70" playOrder="70">
+<navPoint id="navPoint-71" playOrder="71">
                 <navLabel><text>第六十九回 弄小巧用借剑杀人　觉大限吞生金自逝</text></navLabel>
                 <content src="chapter_69.html"/>
             </navPoint>
-<navPoint id="navPoint-71" playOrder="71">
+<navPoint id="navPoint-72" playOrder="72">
                 <navLabel><text>第七十回 林黛玉重建桃花社　史湘云偶填柳絮词</text></navLabel>
                 <content src="chapter_70.html"/>
             </navPoint>
-<navPoint id="navPoint-72" playOrder="72">
+<navPoint id="navPoint-73" playOrder="73">
                 <navLabel><text>第七十一回 嫌隙人有心生嫌隙　鸳鸯女无意遇鸳鸯</text></navLabel>
                 <content src="chapter_71.html"/>
             </navPoint>
-<navPoint id="navPoint-73" playOrder="73">
+<navPoint id="navPoint-74" playOrder="74">
                 <navLabel><text>第七十二回 王熙凤恃强羞说病　来旺妇倚势霸成亲</text></navLabel>
                 <content src="chapter_72.html"/>
             </navPoint>
-<navPoint id="navPoint-74" playOrder="74">
+<navPoint id="navPoint-75" playOrder="75">
                 <navLabel><text>第七十三回 痴丫头误拾绣春囊　懦小姐不问累金凤</text></navLabel>
                 <content src="chapter_73.html"/>
             </navPoint>
-<navPoint id="navPoint-75" playOrder="75">
+<navPoint id="navPoint-76" playOrder="76">
                 <navLabel><text>第七十四回 惑奸谗抄检大观园　矢孤介杜绝宁国府</text></navLabel>
                 <content src="chapter_74.html"/>
             </navPoint>
-<navPoint id="navPoint-76" playOrder="76">
+<navPoint id="navPoint-77" playOrder="77">
                 <navLabel><text>第七十五回 开夜宴异兆发悲音　赏中秋新词得佳谶</text></navLabel>
                 <content src="chapter_75.html"/>
             </navPoint>
-<navPoint id="navPoint-77" playOrder="77">
+<navPoint id="navPoint-78" playOrder="78">
                 <navLabel><text>第七十六回 凸碧堂品笛感凄清　凹晶馆联诗悲寂寞</text></navLabel>
                 <content src="chapter_76.html"/>
             </navPoint>
-<navPoint id="navPoint-78" playOrder="78">
+<navPoint id="navPoint-79" playOrder="79">
                 <navLabel><text>第七十七回 俏丫鬟抱屈夭风流　美优伶斩情归水月</text></navLabel>
                 <content src="chapter_77.html"/>
             </navPoint>
-<navPoint id="navPoint-79" playOrder="79">
+<navPoint id="navPoint-80" playOrder="80">
                 <navLabel><text>第七十八回 老学士闲征姽婳词　痴公子杜撰芙蓉诔</text></navLabel>
                 <content src="chapter_78.html"/>
             </navPoint>
-<navPoint id="navPoint-80" playOrder="80">
+<navPoint id="navPoint-81" playOrder="81">
                 <navLabel><text>第七十九回 薛文龙悔娶河东狮　贾迎春误嫁中山狼</text></navLabel>
                 <content src="chapter_79.html"/>
             </navPoint>
-<navPoint id="navPoint-81" playOrder="81">
+<navPoint id="navPoint-82" playOrder="82">
                 <navLabel><text>第八十回 懦弱迎春肠回九曲 姣怯香菱病入膏肓</text></navLabel>
                 <content src="chapter_80.html"/>
             </navPoint>
-<navPoint id="navPoint-82" playOrder="82">
+<navPoint id="navPoint-83" playOrder="83">
                 <navLabel><text>第八十一回 惜昵近公子做良媒 讳笞罚丫鬟结恶党</text></navLabel>
                 <content src="chapter_81.html"/>
             </navPoint>
-<navPoint id="navPoint-83" playOrder="83">
+<navPoint id="navPoint-84" playOrder="84">
                 <navLabel><text>第八十二回 王熙凤病求千翼方 林黛玉闷作十独吟</text></navLabel>
                 <content src="chapter_82.html"/>
             </navPoint>
-<navPoint id="navPoint-84" playOrder="84">
+<navPoint id="navPoint-85" playOrder="85">
                 <navLabel><text>第八十三回 暮年哀聊发白头吟 金萱悲情洒儿女泪</text></navLabel>
                 <content src="chapter_83.html"/>
             </navPoint>
-<navPoint id="navPoint-85" playOrder="85">
+<navPoint id="navPoint-86" playOrder="86">
                 <navLabel><text>第八十四回 薛宝钗弥望霭烟缘 史湘云喜得如意郎</text></navLabel>
                 <content src="chapter_84.html"/>
             </navPoint>
-<navPoint id="navPoint-86" playOrder="86">
+<navPoint id="navPoint-87" playOrder="87">
                 <navLabel><text>第八十五回 痴王孙传信牵奇缘 惭妙尼避情乘游槎（chá）</text></navLabel>
                 <content src="chapter_85.html"/>
             </navPoint>
-<navPoint id="navPoint-87" playOrder="87">
+<navPoint id="navPoint-88" playOrder="88">
                 <navLabel><text>第八十六回 挑正庶风月断佳偶 祭祖祠清明泣远嫁</text></navLabel>
                 <content src="chapter_86.html"/>
             </navPoint>
-<navPoint id="navPoint-88" playOrder="88">
+<navPoint id="navPoint-89" playOrder="89">
                 <navLabel><text>第八十七回 花柳质命断无情兽 绣户女自绝美韶华</text></navLabel>
                 <content src="chapter_87.html"/>
             </navPoint>
-<navPoint id="navPoint-89" playOrder="89">
+<navPoint id="navPoint-90" playOrder="90">
                 <navLabel><text>第八十八回 邢夫人执意寻舛（chuǎn）错 王熙凤聪明误此生</text></navLabel>
                 <content src="chapter_88.html"/>
             </navPoint>
-<navPoint id="navPoint-90" playOrder="90">
+<navPoint id="navPoint-91" playOrder="91">
                 <navLabel><text>第八十九回 有情人欣遇赏心事 不良妾专煞良辰景</text></navLabel>
                 <content src="chapter_89.html"/>
             </navPoint>
-<navPoint id="navPoint-91" playOrder="91">
+<navPoint id="navPoint-92" playOrder="92">
                 <navLabel><text>第九十回 林黛玉嬉春待好音 贾元春托梦警天伦</text></navLabel>
                 <content src="chapter_90.html"/>
             </navPoint>
-<navPoint id="navPoint-92" playOrder="92">
+<navPoint id="navPoint-93" playOrder="93">
                 <navLabel><text>第九十一回 锦衣卫查抄荣宁府 御林军戒严大观园</text></navLabel>
                 <content src="chapter_91.html"/>
             </navPoint>
-<navPoint id="navPoint-93" playOrder="93">
+<navPoint id="navPoint-94" playOrder="94">
                 <navLabel><text>第九十二回 家宅乱恶子通强梁 世道艰道人连流寇</text></navLabel>
                 <content src="chapter_92.html"/>
             </navPoint>
-<navPoint id="navPoint-94" playOrder="94">
+<navPoint id="navPoint-95" playOrder="95">
                 <navLabel><text>第九十三回 山雨近阊阖笼霭晦 风云喧末世漫尘烟</text></navLabel>
                 <content src="chapter_93.html"/>
             </navPoint>
-<navPoint id="navPoint-95" playOrder="95">
+<navPoint id="navPoint-96" playOrder="96">
                 <navLabel><text>第九十四回 骨肉泯良女落风尘 贵贱失恶奴劫浮财</text></navLabel>
                 <content src="chapter_94.html"/>
             </navPoint>
-<navPoint id="navPoint-96" playOrder="96">
+<navPoint id="navPoint-97" playOrder="97">
                 <navLabel><text>第九十五回 水月庵龄官挞贾蔷 嶽神庙茜雪慰宝玉</text></navLabel>
                 <content src="chapter_95.html"/>
             </navPoint>
-<navPoint id="navPoint-97" playOrder="97">
+<navPoint id="navPoint-98" playOrder="98">
                 <navLabel><text>第九十六回 贾宝玉参无知无识 花袭人信有始有终</text></navLabel>
                 <content src="chapter_96.html"/>
             </navPoint>
-<navPoint id="navPoint-98" playOrder="98">
+<navPoint id="navPoint-99" playOrder="99">
                 <navLabel><text>第九十七回 鸳鸯女谮（zèn）语泄天机 绛珠仙泪尽抛全生</text></navLabel>
                 <content src="chapter_97.html"/>
             </navPoint>
-<navPoint id="navPoint-99" playOrder="99">
+<navPoint id="navPoint-100" playOrder="100">
                 <navLabel><text>第九十八回 系新绦嗟慰失意人 拾旧帕悲悼寂寞骨</text></navLabel>
                 <content src="chapter_98.html"/>
             </navPoint>
-<navPoint id="navPoint-100" playOrder="100">
+<navPoint id="navPoint-101" playOrder="101">
                 <navLabel><text>第九十九回 林黛玉还魂证前缘 贾宝玉展裘触旧情</text></navLabel>
                 <content src="chapter_99.html"/>
             </navPoint>
-<navPoint id="navPoint-101" playOrder="101">
+<navPoint id="navPoint-102" playOrder="102">
                 <navLabel><text>第一百回 邢岫烟魂断大庾岭 赵姨娘命丧平安州</text></navLabel>
                 <content src="chapter_100.html"/>
             </navPoint>
-<navPoint id="navPoint-102" playOrder="102">
+<navPoint id="navPoint-103" playOrder="103">
                 <navLabel><text>第一百一回 呆霸王惹祸牵旧案 悍妒妇作歹设新谋</text></navLabel>
                 <content src="chapter_101.html"/>
             </navPoint>
-<navPoint id="navPoint-103" playOrder="103">
+<navPoint id="navPoint-104" playOrder="104">
                 <navLabel><text>第一百二回 冷惜春甘伴青灯佛 洁妙玉泥陷瓜洲渡</text></navLabel>
                 <content src="chapter_102.html"/>
             </navPoint>
-<navPoint id="navPoint-104" playOrder="104">
+<navPoint id="navPoint-105" playOrder="105">
                 <navLabel><text>第一百三回 刘姥姥三进荣国府 贾巧姐二哭大观园</text></navLabel>
                 <content src="chapter_103.html"/>
             </navPoint>
-<navPoint id="navPoint-105" playOrder="105">
+<navPoint id="navPoint-106" playOrder="106">
                 <navLabel><text>第一百四回 毒中毒薛姨妈添病 计上计夏金桂焚身</text></navLabel>
                 <content src="chapter_104.html"/>
             </navPoint>
-<navPoint id="navPoint-106" playOrder="106">
+<navPoint id="navPoint-107" playOrder="107">
                 <navLabel><text>第一百五回 薛宝钗藉词含讽谏 王熙凤知命强英雄</text></navLabel>
                 <content src="chapter_105.html"/>
             </navPoint>
-<navPoint id="navPoint-107" playOrder="107">
+<navPoint id="navPoint-108" playOrder="108">
                 <navLabel><text>第一百六回 孤倔王孙悬崖撒手 凄惶红袖秋千传情</text></navLabel>
                 <content src="chapter_106.html"/>
             </navPoint>
-<navPoint id="navPoint-108" playOrder="108">
+<navPoint id="navPoint-109" playOrder="109">
                 <navLabel><text>第一百七回 史湘云诉前尘旧梦 贾宝玉淡后事今生</text></navLabel>
                 <content src="chapter_107.html"/>
             </navPoint>
-<navPoint id="navPoint-109" playOrder="109">
+<navPoint id="navPoint-110" playOrder="110">
                 <navLabel><text>第一百八回 情不情僧遭逢穷途 幻中幻境展演情榜</text></navLabel>
                 <content src="chapter_108.html"/>
             </navPoint>
