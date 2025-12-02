@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* 
+ * 癸酉本《红楼梦》 EPUB 样式表
+ * 风格：精美、大气、内涵
+ * 字体：宋体 (Serif)
+ */
+
+body {
+    font-family: "Songti SC", "SimSun", "STSong", "Times New Roman", serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    background-color: #fdfbf7; /* 柔和的米色背景，模拟纸张 */
+    color: #2c2c2c; /* 深灰色文字，比纯黑更柔和 */
+}
+
+/* 章节标题 */
+h1, h2, h3 {
+    font-family: "Kaiti SC", "KaiTi", "STKaiti", serif; /* 楷体用于标题 */
+    font-weight: bold;
+    color: #8b0000; /* 深红色，点缀 */
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    font-size: 1.6em;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+/* 正文段落 */
+p {
+    text-indent: 2em;
+    margin-bottom: 1em;
+}
+
+/* 诗词样式 */
+.poem {
+    margin: 2em 4em;
+    padding: 1em;
+    border-left: 2px solid #8b0000;
+    background-color: #f8f0e0;
+    font-family: "Kaiti SC", "KaiTi", serif;
+    text-align: center;
+}
+
+.poem p {
+    text-indent: 0;
+    margin: 0.5em 0;
+}
+
+/* 批注样式 (【...】) */
+.comment {
+    color: #a52a2a; /* 棕红色 */
+    font-size: 0.9em;
+    font-family: "Kaiti SC", "KaiTi", serif;
+    margin: 0 0.2em;
+}
+
+/* 目录样式 */
+nav#toc ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav#toc li {
+    margin: 0.5em 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+nav#toc a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5em;
+}
+
+nav#toc a:hover {
+    color: #8b0000;
+    background-color: #f0f0f0;
+}
+
+/* 封面图片 */
+.cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 扉页题诗 */
+.intro-poem {
+    text-align: center;
+    margin-top: 30%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}

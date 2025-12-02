@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>癸酉本《红楼梦》</dc:title>
+        <dc:creator opf:role="aut">吴氏石头记</dc:creator>
+        <dc:language>zh-CN</dc:language>
+        <dc:identifier id="BookId" opf:scheme="UUID">de609f1e-3d69-4e95-b043-9ea1444a1985</dc:identifier>
+        <dc:date>2025-12-02</dc:date>
+    </metadata>
+    <manifest>
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+        <item id="style" href="style.css" media-type="text/css"/>
+<item id="toc" href="toc.html" media-type="application/xhtml+xml"/>
+<item id="chap1" href="chapter1.html" media-type="application/xhtml+xml"/>
+<item id="chap2" href="chapter2.html" media-type="application/xhtml+xml"/>
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="toc"/>
+<itemref idref="chap1"/>
+<itemref idref="chap2"/>
+    </spine>
+</package>
