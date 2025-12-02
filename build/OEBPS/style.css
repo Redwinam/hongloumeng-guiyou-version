@@ -87,8 +87,25 @@ p {
 /* 批注样式 (【...】) */
 .comment {
     color: #a52a2a;
-    /* 棕红色 */
+    /* 棕红色 (Brown Red) - Primary Comment */
     font-size: 0.9em;
+    font-family: "Kaiti SC", "KaiTi", serif;
+    margin: 0 0.2em;
+}
+
+.comment-contrast {
+    color: #003366;
+    /* 深藏青 (Deep Navy Blue) - Contrast with Red */
+    font-size: 0.9em;
+    font-family: "Kaiti SC", "KaiTi", serif;
+    margin: 0 0.2em;
+}
+
+.comment-secondary {
+    color: #705d5d;
+    /* 灰紫褐 (Greyish Purple Brown) - Secondary/Subtle */
+    font-size: 0.85em;
+    /* Slightly smaller */
     font-family: "Kaiti SC", "KaiTi", serif;
     margin: 0 0.2em;
 }

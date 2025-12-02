@@ -4,7 +4,7 @@
         <dc:title>癸酉本《红楼梦》</dc:title>
         <dc:creator opf:role="aut">吴氏石头记</dc:creator>
         <dc:language>zh-CN</dc:language>
-        <dc:identifier id="BookId" opf:scheme="UUID">2a6ea21d-7a59-48dd-8139-a9e5aa6d9b41</dc:identifier>
+        <dc:identifier id="BookId" opf:scheme="UUID">f6f2e179-7db2-45a1-905c-be976ea55b7e</dc:identifier>
         <dc:date>2025-12-02</dc:date>
         <meta name="cover" content="cover-image"/>
     </metadata>
