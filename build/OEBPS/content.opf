@@ -4,19 +4,233 @@
         <dc:title>癸酉本《红楼梦》</dc:title>
         <dc:creator opf:role="aut">吴氏石头记</dc:creator>
         <dc:language>zh-CN</dc:language>
-        <dc:identifier id="BookId" opf:scheme="UUID">de609f1e-3d69-4e95-b043-9ea1444a1985</dc:identifier>
+        <dc:identifier id="BookId" opf:scheme="UUID">9ba536fa-9f23-48da-8f5f-21e18fd0209e</dc:identifier>
         <dc:date>2025-12-02</dc:date>
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
         <item id="style" href="style.css" media-type="text/css"/>
-<item id="toc" href="toc.html" media-type="application/xhtml+xml"/>
-<item id="chap1" href="chapter1.html" media-type="application/xhtml+xml"/>
-<item id="chap2" href="chapter2.html" media-type="application/xhtml+xml"/>
+        <item id="toc" href="toc.html" media-type="application/xhtml+xml"/>
+        <item id="intro" href="intro.html" media-type="application/xhtml+xml"/>
+<item id="chap_1" href="chapter_1.html" media-type="application/xhtml+xml"/>
+<item id="chap_2" href="chapter_2.html" media-type="application/xhtml+xml"/>
+<item id="chap_3" href="chapter_3.html" media-type="application/xhtml+xml"/>
+<item id="chap_4" href="chapter_4.html" media-type="application/xhtml+xml"/>
+<item id="chap_5" href="chapter_5.html" media-type="application/xhtml+xml"/>
+<item id="chap_6" href="chapter_6.html" media-type="application/xhtml+xml"/>
+<item id="chap_7" href="chapter_7.html" media-type="application/xhtml+xml"/>
+<item id="chap_8" href="chapter_8.html" media-type="application/xhtml+xml"/>
+<item id="chap_9" href="chapter_9.html" media-type="application/xhtml+xml"/>
+<item id="chap_10" href="chapter_10.html" media-type="application/xhtml+xml"/>
+<item id="chap_11" href="chapter_11.html" media-type="application/xhtml+xml"/>
+<item id="chap_12" href="chapter_12.html" media-type="application/xhtml+xml"/>
+<item id="chap_13" href="chapter_13.html" media-type="application/xhtml+xml"/>
+<item id="chap_14" href="chapter_14.html" media-type="application/xhtml+xml"/>
+<item id="chap_15" href="chapter_15.html" media-type="application/xhtml+xml"/>
+<item id="chap_16" href="chapter_16.html" media-type="application/xhtml+xml"/>
+<item id="chap_17" href="chapter_17.html" media-type="application/xhtml+xml"/>
+<item id="chap_18" href="chapter_18.html" media-type="application/xhtml+xml"/>
+<item id="chap_19" href="chapter_19.html" media-type="application/xhtml+xml"/>
+<item id="chap_20" href="chapter_20.html" media-type="application/xhtml+xml"/>
+<item id="chap_21" href="chapter_21.html" media-type="application/xhtml+xml"/>
+<item id="chap_22" href="chapter_22.html" media-type="application/xhtml+xml"/>
+<item id="chap_23" href="chapter_23.html" media-type="application/xhtml+xml"/>
+<item id="chap_24" href="chapter_24.html" media-type="application/xhtml+xml"/>
+<item id="chap_25" href="chapter_25.html" media-type="application/xhtml+xml"/>
+<item id="chap_26" href="chapter_26.html" media-type="application/xhtml+xml"/>
+<item id="chap_27" href="chapter_27.html" media-type="application/xhtml+xml"/>
+<item id="chap_28" href="chapter_28.html" media-type="application/xhtml+xml"/>
+<item id="chap_29" href="chapter_29.html" media-type="application/xhtml+xml"/>
+<item id="chap_30" href="chapter_30.html" media-type="application/xhtml+xml"/>
+<item id="chap_31" href="chapter_31.html" media-type="application/xhtml+xml"/>
+<item id="chap_32" href="chapter_32.html" media-type="application/xhtml+xml"/>
+<item id="chap_33" href="chapter_33.html" media-type="application/xhtml+xml"/>
+<item id="chap_34" href="chapter_34.html" media-type="application/xhtml+xml"/>
+<item id="chap_35" href="chapter_35.html" media-type="application/xhtml+xml"/>
+<item id="chap_36" href="chapter_36.html" media-type="application/xhtml+xml"/>
+<item id="chap_37" href="chapter_37.html" media-type="application/xhtml+xml"/>
+<item id="chap_38" href="chapter_38.html" media-type="application/xhtml+xml"/>
+<item id="chap_39" href="chapter_39.html" media-type="application/xhtml+xml"/>
+<item id="chap_40" href="chapter_40.html" media-type="application/xhtml+xml"/>
+<item id="chap_41" href="chapter_41.html" media-type="application/xhtml+xml"/>
+<item id="chap_42" href="chapter_42.html" media-type="application/xhtml+xml"/>
+<item id="chap_43" href="chapter_43.html" media-type="application/xhtml+xml"/>
+<item id="chap_44" href="chapter_44.html" media-type="application/xhtml+xml"/>
+<item id="chap_45" href="chapter_45.html" media-type="application/xhtml+xml"/>
+<item id="chap_46" href="chapter_46.html" media-type="application/xhtml+xml"/>
+<item id="chap_47" href="chapter_47.html" media-type="application/xhtml+xml"/>
+<item id="chap_48" href="chapter_48.html" media-type="application/xhtml+xml"/>
+<item id="chap_49" href="chapter_49.html" media-type="application/xhtml+xml"/>
+<item id="chap_50" href="chapter_50.html" media-type="application/xhtml+xml"/>
+<item id="chap_51" href="chapter_51.html" media-type="application/xhtml+xml"/>
+<item id="chap_52" href="chapter_52.html" media-type="application/xhtml+xml"/>
+<item id="chap_53" href="chapter_53.html" media-type="application/xhtml+xml"/>
+<item id="chap_54" href="chapter_54.html" media-type="application/xhtml+xml"/>
+<item id="chap_55" href="chapter_55.html" media-type="application/xhtml+xml"/>
+<item id="chap_56" href="chapter_56.html" media-type="application/xhtml+xml"/>
+<item id="chap_57" href="chapter_57.html" media-type="application/xhtml+xml"/>
+<item id="chap_58" href="chapter_58.html" media-type="application/xhtml+xml"/>
+<item id="chap_59" href="chapter_59.html" media-type="application/xhtml+xml"/>
+<item id="chap_60" href="chapter_60.html" media-type="application/xhtml+xml"/>
+<item id="chap_61" href="chapter_61.html" media-type="application/xhtml+xml"/>
+<item id="chap_62" href="chapter_62.html" media-type="application/xhtml+xml"/>
+<item id="chap_63" href="chapter_63.html" media-type="application/xhtml+xml"/>
+<item id="chap_64" href="chapter_64.html" media-type="application/xhtml+xml"/>
+<item id="chap_65" href="chapter_65.html" media-type="application/xhtml+xml"/>
+<item id="chap_66" href="chapter_66.html" media-type="application/xhtml+xml"/>
+<item id="chap_67" href="chapter_67.html" media-type="application/xhtml+xml"/>
+<item id="chap_68" href="chapter_68.html" media-type="application/xhtml+xml"/>
+<item id="chap_69" href="chapter_69.html" media-type="application/xhtml+xml"/>
+<item id="chap_70" href="chapter_70.html" media-type="application/xhtml+xml"/>
+<item id="chap_71" href="chapter_71.html" media-type="application/xhtml+xml"/>
+<item id="chap_72" href="chapter_72.html" media-type="application/xhtml+xml"/>
+<item id="chap_73" href="chapter_73.html" media-type="application/xhtml+xml"/>
+<item id="chap_74" href="chapter_74.html" media-type="application/xhtml+xml"/>
+<item id="chap_75" href="chapter_75.html" media-type="application/xhtml+xml"/>
+<item id="chap_76" href="chapter_76.html" media-type="application/xhtml+xml"/>
+<item id="chap_77" href="chapter_77.html" media-type="application/xhtml+xml"/>
+<item id="chap_78" href="chapter_78.html" media-type="application/xhtml+xml"/>
+<item id="chap_79" href="chapter_79.html" media-type="application/xhtml+xml"/>
+<item id="chap_80" href="chapter_80.html" media-type="application/xhtml+xml"/>
+<item id="chap_81" href="chapter_81.html" media-type="application/xhtml+xml"/>
+<item id="chap_82" href="chapter_82.html" media-type="application/xhtml+xml"/>
+<item id="chap_83" href="chapter_83.html" media-type="application/xhtml+xml"/>
+<item id="chap_84" href="chapter_84.html" media-type="application/xhtml+xml"/>
+<item id="chap_85" href="chapter_85.html" media-type="application/xhtml+xml"/>
+<item id="chap_86" href="chapter_86.html" media-type="application/xhtml+xml"/>
+<item id="chap_87" href="chapter_87.html" media-type="application/xhtml+xml"/>
+<item id="chap_88" href="chapter_88.html" media-type="application/xhtml+xml"/>
+<item id="chap_89" href="chapter_89.html" media-type="application/xhtml+xml"/>
+<item id="chap_90" href="chapter_90.html" media-type="application/xhtml+xml"/>
+<item id="chap_91" href="chapter_91.html" media-type="application/xhtml+xml"/>
+<item id="chap_92" href="chapter_92.html" media-type="application/xhtml+xml"/>
+<item id="chap_93" href="chapter_93.html" media-type="application/xhtml+xml"/>
+<item id="chap_94" href="chapter_94.html" media-type="application/xhtml+xml"/>
+<item id="chap_95" href="chapter_95.html" media-type="application/xhtml+xml"/>
+<item id="chap_96" href="chapter_96.html" media-type="application/xhtml+xml"/>
+<item id="chap_97" href="chapter_97.html" media-type="application/xhtml+xml"/>
+<item id="chap_98" href="chapter_98.html" media-type="application/xhtml+xml"/>
+<item id="chap_99" href="chapter_99.html" media-type="application/xhtml+xml"/>
+<item id="chap_100" href="chapter_100.html" media-type="application/xhtml+xml"/>
+<item id="chap_101" href="chapter_101.html" media-type="application/xhtml+xml"/>
+<item id="chap_102" href="chapter_102.html" media-type="application/xhtml+xml"/>
+<item id="chap_103" href="chapter_103.html" media-type="application/xhtml+xml"/>
+<item id="chap_104" href="chapter_104.html" media-type="application/xhtml+xml"/>
+<item id="chap_105" href="chapter_105.html" media-type="application/xhtml+xml"/>
+<item id="chap_106" href="chapter_106.html" media-type="application/xhtml+xml"/>
+<item id="chap_107" href="chapter_107.html" media-type="application/xhtml+xml"/>
+<item id="chap_108" href="chapter_108.html" media-type="application/xhtml+xml"/>
     </manifest>
     <spine toc="ncx">
         <itemref idref="toc"/>
-<itemref idref="chap1"/>
-<itemref idref="chap2"/>
+        <itemref idref="intro"/>
+<itemref idref="chap_1"/>
+<itemref idref="chap_2"/>
+<itemref idref="chap_3"/>
+<itemref idref="chap_4"/>
+<itemref idref="chap_5"/>
+<itemref idref="chap_6"/>
+<itemref idref="chap_7"/>
+<itemref idref="chap_8"/>
+<itemref idref="chap_9"/>
+<itemref idref="chap_10"/>
+<itemref idref="chap_11"/>
+<itemref idref="chap_12"/>
+<itemref idref="chap_13"/>
+<itemref idref="chap_14"/>
+<itemref idref="chap_15"/>
+<itemref idref="chap_16"/>
+<itemref idref="chap_17"/>
+<itemref idref="chap_18"/>
+<itemref idref="chap_19"/>
+<itemref idref="chap_20"/>
+<itemref idref="chap_21"/>
+<itemref idref="chap_22"/>
+<itemref idref="chap_23"/>
+<itemref idref="chap_24"/>
+<itemref idref="chap_25"/>
+<itemref idref="chap_26"/>
+<itemref idref="chap_27"/>
+<itemref idref="chap_28"/>
+<itemref idref="chap_29"/>
+<itemref idref="chap_30"/>
+<itemref idref="chap_31"/>
+<itemref idref="chap_32"/>
+<itemref idref="chap_33"/>
+<itemref idref="chap_34"/>
+<itemref idref="chap_35"/>
+<itemref idref="chap_36"/>
+<itemref idref="chap_37"/>
+<itemref idref="chap_38"/>
+<itemref idref="chap_39"/>
+<itemref idref="chap_40"/>
+<itemref idref="chap_41"/>
+<itemref idref="chap_42"/>
+<itemref idref="chap_43"/>
+<itemref idref="chap_44"/>
+<itemref idref="chap_45"/>
+<itemref idref="chap_46"/>
+<itemref idref="chap_47"/>
+<itemref idref="chap_48"/>
+<itemref idref="chap_49"/>
+<itemref idref="chap_50"/>
+<itemref idref="chap_51"/>
+<itemref idref="chap_52"/>
+<itemref idref="chap_53"/>
+<itemref idref="chap_54"/>
+<itemref idref="chap_55"/>
+<itemref idref="chap_56"/>
+<itemref idref="chap_57"/>
+<itemref idref="chap_58"/>
+<itemref idref="chap_59"/>
+<itemref idref="chap_60"/>
+<itemref idref="chap_61"/>
+<itemref idref="chap_62"/>
+<itemref idref="chap_63"/>
+<itemref idref="chap_64"/>
+<itemref idref="chap_65"/>
+<itemref idref="chap_66"/>
+<itemref idref="chap_67"/>
+<itemref idref="chap_68"/>
+<itemref idref="chap_69"/>
+<itemref idref="chap_70"/>
+<itemref idref="chap_71"/>
+<itemref idref="chap_72"/>
+<itemref idref="chap_73"/>
+<itemref idref="chap_74"/>
+<itemref idref="chap_75"/>
+<itemref idref="chap_76"/>
+<itemref idref="chap_77"/>
+<itemref idref="chap_78"/>
+<itemref idref="chap_79"/>
+<itemref idref="chap_80"/>
+<itemref idref="chap_81"/>
+<itemref idref="chap_82"/>
+<itemref idref="chap_83"/>
+<itemref idref="chap_84"/>
+<itemref idref="chap_85"/>
+<itemref idref="chap_86"/>
+<itemref idref="chap_87"/>
+<itemref idref="chap_88"/>
+<itemref idref="chap_89"/>
+<itemref idref="chap_90"/>
+<itemref idref="chap_91"/>
+<itemref idref="chap_92"/>
+<itemref idref="chap_93"/>
+<itemref idref="chap_94"/>
+<itemref idref="chap_95"/>
+<itemref idref="chap_96"/>
+<itemref idref="chap_97"/>
+<itemref idref="chap_98"/>
+<itemref idref="chap_99"/>
+<itemref idref="chap_100"/>
+<itemref idref="chap_101"/>
+<itemref idref="chap_102"/>
+<itemref idref="chap_103"/>
+<itemref idref="chap_104"/>
+<itemref idref="chap_105"/>
+<itemref idref="chap_106"/>
+<itemref idref="chap_107"/>
+<itemref idref="chap_108"/>
     </spine>
 </package>

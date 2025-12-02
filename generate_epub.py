@@ -43,31 +43,148 @@ def create_container_xml():
     with open(os.path.join(BUILD_DIR, 'META-INF', 'container.xml'), 'w') as f:
         f.write(content)
 
-def parse_toc():
+def parse_full_text():
+    full_path = os.path.join(RAW_DATA_DIR, 'full.txt')
+    if not os.path.exists(full_path):
+        print("Error: full.txt not found.")
+        return [], []
+
+    with open(full_path, 'r') as f:
+        content = f.read()
+
+    # Split into TOC and Body
+    # We assume "扉页题诗：" marks the start of the content preamble
+    split_marker = "扉页题诗："
+    if split_marker in content:
+        parts = content.split(split_marker, 1)
+        toc_text = parts[0]
+        body_text = split_marker + parts[1] # Keep the marker in the body
+    else:
+        # Fallback: try to find the first chapter
+        print("Warning: '扉页题诗：' marker not found. Trying to split by first chapter.")
+        match = re.search(r'(^|\n)第\s*一\s*回', content)
+        if match:
+            toc_text = content[:match.start()]
+            body_text = content[match.start():]
+        else:
+            print("Error: Could not split TOC and Body.")
+            return [], []
+
+    # Parse TOC
     chapters = []
-    toc_path = os.path.join(RAW_DATA_DIR, 'toc.txt')
-    if not os.path.exists(toc_path):
-        print("Warning: TOC file not found.")
-        return chapters
+    # Regex for TOC lines: "第 X 回 Title PageNum"
+    # Note: The spaces in "第  一  回" might vary.
+    toc_pattern = re.compile(r'(第\s*[一二三四五六七八九十百]+\s*回)\s+(.*?)\s*(\d+)?$')
     
-    with open(toc_path, 'r') as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            # Match "第 X 回 Title PageNum"
-            # Example: 第  一  回  甄士隐梦幻识通灵　贾雨村风尘怀闺秀	1
-            match = re.match(r'(第\s*[一二三四五六七八九十百]+\s*回)\s+(.*?)(\d+)?$', line)
-            if match:
-                chap_num_str = match.group(1).replace(' ', '')
-                title = match.group(2).strip()
-                chapters.append({
-                    'id': f'chap{len(chapters) + 1}',
-                    'num_str': chap_num_str,
-                    'title': title,
-                    'filename': f'chapter{len(chapters) + 1}.html'
-                })
-    return chapters
+    for line in toc_text.split('\n'):
+        line = line.strip()
+        if not line:
+            continue
+        match = toc_pattern.match(line)
+        if match:
+            chap_num_str = match.group(1).replace(' ', '') # Normalize "第  一  回" to "第一回"
+            title = match.group(2).strip()
+            chapters.append({
+                'id': f'chap{len(chapters) + 1}',
+                'num_str': chap_num_str,
+                'title': title,
+                'filename': f'chapter{len(chapters) + 1}.html'
+            })
+    
+    # Parse Body
+    # We need to split body_text into sections.
+    # 1. Intro (from "扉页题诗：" to "第一回")
+    # 2. Chapters
+    
+    # We'll use a regex to find all chapter headers in the body
+    # The header in body usually looks like "第一回  甄士隐..."
+    # It should match the start of a line.
+    
+    # Regex to find chapter starts. 
+    # We use capturing group to keep the delimiter (the header itself)
+    # Pattern: newline + "第" + spaces + chinese numbers + spaces + "回" + spaces + title
+    # But title might be complex. Let's just match "第...回"
+    
+    # Note: body_text might start with "扉页题诗：..."
+    
+    # Let's find all occurrences of chapter headers
+    chapter_starts = []
+    # Pattern: Start of line, "第", optional spaces, number, optional spaces, "回"
+    chap_header_pattern = re.compile(r'(^|\n)(第\s*[一二三四五六七八九十百]+\s*回\s+.*?)(\n|$)')
+    
+    # We will iterate through the text and split manually to be safe
+    # Or better: use re.split but keep delimiters?
+    # re.split with capturing group keeps the delimiter.
+    
+    # Let's try to find the positions of all chapter headers
+    matches = list(chap_header_pattern.finditer(body_text))
+    
+    parsed_body = []
+    
+    # If there are matches, the text before the first match is the Intro
+    if matches:
+        intro_text = body_text[:matches[0].start()].strip()
+        if intro_text:
+            parsed_body.append({
+                'type': 'intro',
+                'title': '扉页',
+                'content': intro_text,
+                'filename': 'intro.html'
+            })
+            
+        for i, match in enumerate(matches):
+            start = match.start()
+            # The content of this chapter goes until the start of the next match
+            if i < len(matches) - 1:
+                end = matches[i+1].start()
+            else:
+                end = len(body_text)
+            
+            # The match includes the newline before "第", so we need to be careful
+            # match.group(2) is the actual header "第一回 ..."
+            
+            full_chunk = body_text[start:end]
+            # Remove the leading newline if present in the chunk (it is part of the match group 1)
+            full_chunk = full_chunk.strip()
+            
+            # Extract title from the first line
+            lines = full_chunk.split('\n')
+            header = lines[0].strip()
+            content = '\n'.join(lines[1:]).strip()
+            
+            # Try to match the chapter info from TOC
+            # We assume the order is the same
+            # But let's be robust.
+            
+            # Normalize header to find number
+            # "第一回  Title"
+            header_match = re.match(r'(第\s*[一二三四五六七八九十百]+\s*回)\s+(.*)', header)
+            if header_match:
+                num_str = header_match.group(1).replace(' ', '')
+                title = header_match.group(2).strip()
+            else:
+                num_str = header[:4] # Fallback
+                title = header
+            
+            parsed_body.append({
+                'type': 'chapter',
+                'num_str': num_str,
+                'title': title,
+                'content': content,
+                'original_header': header
+            })
+            
+    else:
+        # No chapters found? Treat whole body as one?
+        print("Warning: No chapter headers found in body.")
+        parsed_body.append({
+            'type': 'intro',
+            'title': '全文',
+            'content': body_text,
+            'filename': 'full.html'
+        })
+
+    return chapters, parsed_body
 
 def process_text(text):
     # Escape HTML
@@ -76,56 +193,47 @@ def process_text(text):
     # Wrap comments
     text = re.sub(r'(【.*?】)', r'<span class="comment">\1</span>', text)
     
-    # Simple poem detection (lines starting with spaces or short lines after "诗曰")
-    # This is a heuristic. For now, we just wrap paragraphs.
-    
     lines = text.split('\n')
     html_lines = []
-    
-    in_poem = False
     
     for line in lines:
         line = line.strip()
         if not line:
             continue
             
-        if line.startswith('诗曰') or line.endswith('云：') or line.endswith('道是：'):
-             html_lines.append(f'<p>{line}</p>')
-             # Could start a poem block here if we want strict structure, 
-             # but for now simple paragraphs are safer.
-        elif len(line) < 20 and (line.endswith('。') or line.endswith('，')):
-             # Possible poem line
+        if line.startswith('诗曰') or line.endswith('云：') or line.endswith('道是：') or line.endswith('曰：'):
+             html_lines.append(f'<p class="poem-intro">{line}</p>')
+        elif len(line) < 40 and (line.endswith('。') or line.endswith('，') or line.endswith('？') or line.endswith('！')):
+             # Heuristic for poem lines or short verses
+             # Check if it looks like a poem (often centered or distinct)
+             # For now, just a class
              html_lines.append(f'<p class="poem-line" style="text-align:center;">{line}</p>')
         else:
              html_lines.append(f'<p>{line}</p>')
              
     return '\n'.join(html_lines)
 
-def create_chapter_html(chapter_info, content):
+def create_html_file(filename, title, content):
     html_content = f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>{chapter_info['title']}</title>
+    <title>{title}</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-    <h1>{chapter_info['num_str']} {chapter_info['title']}</h1>
+    <h1>{title}</h1>
     {content}
 </body>
 </html>'''
     
-    with open(os.path.join(BUILD_DIR, 'OEBPS', chapter_info['filename']), 'w') as f:
+    with open(os.path.join(BUILD_DIR, 'OEBPS', filename), 'w') as f:
         f.write(html_content)
 
-def create_toc_html(chapters):
-    items = []
-    for chap in chapters:
-        # Only link if file exists (we might only have text for first few chapters)
-        if os.path.exists(os.path.join(BUILD_DIR, 'OEBPS', chap['filename'])):
-             items.append(f'<li><a href="{chap["filename"]}">{chap["num_str"]} {chap["title"]}</a></li>')
-        else:
-             items.append(f'<li>{chap["num_str"]} {chap["title"]} (待补)</li>')
+def create_toc_html(toc_items):
+    items_html = []
+    for item in toc_items:
+        items_html.append(f'<li><a href="{item["href"]}">{item["label"]}</a></li>')
              
     content = f'''<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
@@ -138,7 +246,7 @@ def create_toc_html(chapters):
     <h1>目录</h1>
     <nav id="toc">
         <ol>
-            {chr(10).join(items)}
+            {chr(10).join(items_html)}
         </ol>
     </nav>
 </body>
@@ -146,21 +254,8 @@ def create_toc_html(chapters):
     with open(os.path.join(BUILD_DIR, 'OEBPS', 'toc.html'), 'w') as f:
         f.write(content)
 
-def create_content_opf(chapters):
-    manifest_items = []
-    spine_items = []
-    
-    # Add style
-    manifest_items.append('<item id="style" href="style.css" media-type="text/css"/>')
-    # Add TOC html
-    manifest_items.append('<item id="toc" href="toc.html" media-type="application/xhtml+xml"/>')
-    spine_items.append('<itemref idref="toc"/>')
-    
-    # Add chapters
-    for chap in chapters:
-        if os.path.exists(os.path.join(BUILD_DIR, 'OEBPS', chap['filename'])):
-            manifest_items.append(f'<item id="{chap["id"]}" href="{chap["filename"]}" media-type="application/xhtml+xml"/>')
-            spine_items.append(f'<itemref idref="{chap["id"]}"/>')
+def create_content_opf(manifest_items, spine_items):
+    # manifest_items and spine_items are lists of strings
     
     content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
@@ -173,9 +268,12 @@ def create_content_opf(chapters):
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+        <item id="style" href="style.css" media-type="text/css"/>
+        <item id="toc" href="toc.html" media-type="application/xhtml+xml"/>
         {chr(10).join(manifest_items)}
     </manifest>
     <spine toc="ncx">
+        <itemref idref="toc"/>
         {chr(10).join(spine_items)}
     </spine>
 </package>'''
@@ -183,25 +281,7 @@ def create_content_opf(chapters):
     with open(os.path.join(BUILD_DIR, 'OEBPS', 'content.opf'), 'w') as f:
         f.write(content)
 
-def create_toc_ncx(chapters):
-    nav_points = []
-    play_order = 1
-    
-    # TOC
-    nav_points.append(f'''<navPoint id="navPoint-{play_order}" playOrder="{play_order}">
-        <navLabel><text>目录</text></navLabel>
-        <content src="toc.html"/>
-    </navPoint>''')
-    play_order += 1
-    
-    for chap in chapters:
-        if os.path.exists(os.path.join(BUILD_DIR, 'OEBPS', chap['filename'])):
-            nav_points.append(f'''<navPoint id="navPoint-{play_order}" playOrder="{play_order}">
-                <navLabel><text>{chap["num_str"]} {chap["title"]}</text></navLabel>
-                <content src="{chap["filename"]}"/>
-            </navPoint>''')
-            play_order += 1
-            
+def create_toc_ncx(nav_points):
     content = f'''<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
 <ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
@@ -213,6 +293,10 @@ def create_toc_ncx(chapters):
     </head>
     <docTitle><text>{TITLE}</text></docTitle>
     <navMap>
+        <navPoint id="navPoint-0" playOrder="0">
+            <navLabel><text>目录</text></navLabel>
+            <content src="toc.html"/>
+        </navPoint>
         {chr(10).join(nav_points)}
     </navMap>
 </ncx>'''
@@ -226,10 +310,7 @@ def zip_epub():
         os.remove(epub_path)
         
     with zipfile.ZipFile(epub_path, 'w', zipfile.ZIP_DEFLATED) as zf:
-        # Mimetype must be first and uncompressed
         zf.write(os.path.join(BUILD_DIR, 'mimetype'), 'mimetype', compress_type=zipfile.ZIP_STORED)
-        
-        # Add other files
         for root, dirs, files in os.walk(BUILD_DIR):
             for file in files:
                 if file == 'mimetype':
@@ -244,36 +325,61 @@ def main():
     ensure_dirs()
     create_mimetype()
     create_container_xml()
-    
-    # Copy style
     shutil.copy(os.path.join(SRC_DIR, 'style.css'), os.path.join(BUILD_DIR, 'OEBPS', 'style.css'))
     
-    # Parse TOC
-    chapters = parse_toc()
+    toc_list, parsed_body = parse_full_text()
     
-    # Process Chapters (Hardcoded for 1 and 2 for now, or loop through available files)
-    # We have chapter1.txt and chapter2.txt
-    for i in [1, 2]:
-        txt_path = os.path.join(RAW_DATA_DIR, f'chapter{i}.txt')
-        if os.path.exists(txt_path):
-            with open(txt_path, 'r') as f:
-                content = f.read()
-            
-            # The raw text includes title at top, we might want to strip it if we add it in HTML
-            # But our process_text just converts lines to <p>, so it's fine.
-            # Ideally we remove the first few lines if they match the title.
-            
-            html_content = process_text(content)
-            
-            # Find the chapter info from TOC
-            # Assuming order matches.
-            if i <= len(chapters):
-                chap_info = chapters[i-1]
-                create_chapter_html(chap_info, html_content)
+    manifest_items = []
+    spine_items = []
+    nav_points = []
+    toc_html_items = []
     
-    create_toc_html(chapters)
-    create_content_opf(chapters)
-    create_toc_ncx(chapters)
+    # Process parsed body items
+    # We need to link them to the TOC list if possible, or just generate them
+    
+    # If we have an intro, add it first
+    play_order = 1
+    chapter_index = 0
+    
+    for item in parsed_body:
+        if item['type'] == 'intro':
+            html_content = process_text(item['content'])
+            create_html_file(item['filename'], item['title'], html_content)
+            
+            manifest_items.append(f'<item id="intro" href="{item["filename"]}" media-type="application/xhtml+xml"/>')
+            spine_items.append('<itemref idref="intro"/>')
+            
+            nav_points.append(f'''<navPoint id="navPoint-{play_order}" playOrder="{play_order}">
+                <navLabel><text>{item["title"]}</text></navLabel>
+                <content src="{item["filename"]}"/>
+            </navPoint>''')
+            toc_html_items.append({'href': item['filename'], 'label': item['title']})
+            play_order += 1
+            
+        elif item['type'] == 'chapter':
+            chapter_index += 1
+            filename = f"chapter_{chapter_index}.html"
+            html_content = process_text(item['content'])
+            
+            # Full title
+            full_title = f"{item['num_str']} {item['title']}"
+            
+            create_html_file(filename, full_title, html_content)
+            
+            chap_id = f"chap_{chapter_index}"
+            manifest_items.append(f'<item id="{chap_id}" href="{filename}" media-type="application/xhtml+xml"/>')
+            spine_items.append(f'<itemref idref="{chap_id}"/>')
+            
+            nav_points.append(f'''<navPoint id="navPoint-{play_order}" playOrder="{play_order}">
+                <navLabel><text>{full_title}</text></navLabel>
+                <content src="{filename}"/>
+            </navPoint>''')
+            toc_html_items.append({'href': filename, 'label': full_title})
+            play_order += 1
+
+    create_toc_html(toc_html_items)
+    create_content_opf(manifest_items, spine_items)
+    create_toc_ncx(nav_points)
     
     zip_epub()
 
