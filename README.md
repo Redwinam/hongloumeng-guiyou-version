@@ -9,7 +9,7 @@
 
 *注：由于 GitHub 限制，下载文件名为拼音 `GuiYouBen_HongLouMeng.epub`，但内容为完整中文版。*
 
-### 百度网盘 (国内推荐)
+### 百度网盘 (国内)
 链接: https://pan.baidu.com/s/1cpV8s2Vyd1QoaGeuLWWwQg?pwd=JYSX 
 提取码: JYSX
 
